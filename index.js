@@ -1,4 +1,14 @@
 console.log("Bot coded by Felix_Playz#1000");
+const express = require("express")
+const app = express ()
+
+app.get("/", (req, res) => {
+  res.send("hey ya")
+})
+
+app.listen(3000, () => { 
+  console.log("Project is ready")
+})
 
 //====================================================================================CONSTANTS REQUIRED ON READY=============================================================================================
 const { Client, Collection } = require('discord.js');
